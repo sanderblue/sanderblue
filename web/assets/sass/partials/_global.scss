@@ -1,11 +1,16 @@
 html, body { font-family: $OpenSans; }
 
 html {
-  background-image: url('../img/bg/treeOverRiver.jpg');
-  @include background-size(cover);
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+    background-image: url('../img/bg/treeOverRiver.jpg');
+    @include background-size(cover);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body {
+    background: transparent;
+    color: rgba(255, 255, 255, .85);
 }
 
 a {

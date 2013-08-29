@@ -88,15 +88,28 @@ html {
 }
 
 /* line 11, ../sass/partials/_global.scss */
+body {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* line 16, ../sass/partials/_global.scss */
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.85);
 }
-/* line 15, ../sass/partials/_global.scss */
+/* line 20, ../sass/partials/_global.scss */
 a:hover {
   cursor: pointer;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.99);
+}
+
+/* line 3, ../sass/partials/_content.scss */
+.jumbotron {
+  border: 1px solid white;
+  margin-top: 60px;
+  background-color: rgba(50, 50, 50, 0.15);
 }
 
 /* line 1, ../sass/partials/_navigation.scss */
