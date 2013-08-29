@@ -14,6 +14,32 @@
             color: rgba(255, 255, 255, .99);
         }
     }
+
+    .navbar-collapse.collapse {
+        // @include breakpoint(tablet) {
+        //     border: 0px;
+        //     display: block;
+        //     float: right;
+
+        //     .navbar-right {
+        //         // float: right;
+        //     }
+
+        //     .nav>li {
+        //         display: inline-block;
+        //     }
+        // }
+
+        @include breakpoint(mobile) {
+            border: none;
+            display: block;
+            float: right;
+
+            .nav>li {
+                display: inline-block;
+            }
+        }
+    }
 }
 
 .navbar-header {
@@ -24,6 +50,11 @@
     padding: {
         left: 10px;
         right: 10px;
+    }
+
+    @include breakpoint(tablet) {
+        border: 0px;
+        display: inline-block;
     }
 }
 

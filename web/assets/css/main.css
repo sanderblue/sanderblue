@@ -124,33 +124,52 @@ a:hover {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.99);
 }
+@media (max-width: 480px) {
+  /* line 18, ../sass/partials/_navigation.scss */
+  .navbar .navbar-collapse.collapse {
+    border: none;
+    display: block;
+    float: right;
+  }
+  /* line 38, ../sass/partials/_navigation.scss */
+  .navbar .navbar-collapse.collapse .nav > li {
+    display: inline-block;
+  }
+}
 
-/* line 19, ../sass/partials/_navigation.scss */
+/* line 45, ../sass/partials/_navigation.scss */
 .navbar-header {
   margin-top: 13px;
   margin-bottom: 9px;
   padding-left: 10px;
   padding-right: 10px;
 }
+@media (max-width: 768px) {
+  /* line 45, ../sass/partials/_navigation.scss */
+  .navbar-header {
+    border: 0px;
+    display: inline-block;
+  }
+}
 
-/* line 30, ../sass/partials/_navigation.scss */
+/* line 61, ../sass/partials/_navigation.scss */
 .s, .b {
   text-shadow: 0 1px 4px rgba(100, 100, 100, 0.3);
   font-family: "Comfortaa", sans-serif;
   font-size: 1.7em;
   letter-spacing: -0.14em;
 }
-/* line 36, ../sass/partials/_navigation.scss */
+/* line 67, ../sass/partials/_navigation.scss */
 .s:hover, .b:hover {
   text-decoration: none;
 }
 
-/* line 41, ../sass/partials/_navigation.scss */
+/* line 72, ../sass/partials/_navigation.scss */
 .s {
   color: #5bdf4f;
 }
 
-/* line 42, ../sass/partials/_navigation.scss */
+/* line 73, ../sass/partials/_navigation.scss */
 .b {
   color: #01b2ec;
 }
