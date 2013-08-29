@@ -1,0 +1,28 @@
+{
+    "name": "sanderblue.com",
+    "type": "website",
+    "description": "This is my personal website.",
+    "keywords": [],
+    "homepage": "http://sanderblue.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sander Blue",
+            "email": "william.a.blue@gmail.com"
+        }
+    ],
+	"require": {
+		"silex/silex": "~1.0",
+		"twig/twig": "1.13.2",
+		"symfony/twig-bridge": "2.1.*",
+        "symfony/form": "~2.1.4",
+        "symfony/validator": "~2.1",
+        "symfony/config": "~2.1",
+        "symfony/translation": "~2.1",
+        "symfony/locale": "~2.1"
+},
+	"minimum-stability": "dev",
+	"autoload"         : {
+        "psr-0": { "Library": "src/"}
+    }
+}

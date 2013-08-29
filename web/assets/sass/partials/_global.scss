@@ -1,0 +1,20 @@
+html, body { font-family: $OpenSans; }
+
+html {
+  background-image: url('../img/bg/treeOverRiver.jpg');
+  @include background-size(cover);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .85);
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: rgba(255, 255, 255, .99);
+    }
+}
