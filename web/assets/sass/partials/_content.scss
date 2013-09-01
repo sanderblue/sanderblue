@@ -1,10 +1,13 @@
 .container {
     .jumbotron {
-        // border: 1px solid white;
         background-color: rgba(50, 50, 50, 0);
         padding-right: 0px;
         padding-left: 0px;
         margin-top: 60px;
+
+        @include breakpoint(mobile) {
+            margin-top: 40px;
+        }
     }
 }
 
@@ -20,10 +23,15 @@
     @include breakpoint(mobile) {
         float: none;
         margin: 0 auto;
+        display: none;
     }
 }
 
-.left-side {}
+.left-side {
+    @include breakpoint(mobile) {
+        width: 0%;
+    }
+}
 .right-side {
     text-align: right;
     float: right;
@@ -40,6 +48,10 @@
     @include breakpoint(bootstrap_tablet) {
         width: 60%;
     }
+
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 .hello {
@@ -47,6 +59,12 @@
     font-family: $CenturyMT;
     font-size: 5.75em;
     line-height: 1.0em;
+
+    @include breakpoint(mobile) {
+        display: none;
+        // text-align: center;
+        // font-size: 3.75em;
+    }
 }
 
 .welcome {
@@ -54,16 +72,25 @@
     font-size: 0.75em;
     font-weight: 500;
     line-height: 0em;
+
+    @include breakpoint(mobile) {
+        display: none;
+        // text-align: center;
+    }
 }
 
 .intro {
+    letter-spacing: 0.05em;
     padding: {
         top: 10px;
         bottom: 13%;
         left: 10px;
-        right: 10px;
+        right: 12px;
     }
-    letter-spacing: 0.05em;
+
+    @include breakpoint(mobile) {
+        text-align: center;
+    }
 
     p {
         font-size: 0.73em;
@@ -85,6 +112,12 @@
     font-size: 0.75em;
     font-weight: 400;
     margin-top: 5%;
+
+    @include breakpoint(mobile) {
+        text-align: center;
+        font-size: 0.85em;
+        padding-bottom: 10px;
+    }
 
     .info-link {
         @include text-shadow(0 6px 10px rgba(0, 0, 0, .8));
@@ -121,7 +154,7 @@
     width: 8px;
     margin: {
         left: -24px;
-        top: 0.17%;
+        top: 0px;
     }
 }
 
@@ -165,7 +198,7 @@
     padding: {
         top: 10px;
         bottom: 30px;
-        left: 10px;
+        left: 0px;
         right: 10px;
     }
 }
@@ -179,6 +212,17 @@
 
     @include breakpoint(tablet) {
         width: 24%;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: 0.9em;
+        width: 23%;
+    }
+
+    &:last-child {
+        @include breakpoint(mobile) {
+            margin-right: 8px;
+        }
     }
 }
 
@@ -208,13 +252,18 @@
 }
 
 .social-icon-holder {
+    display: none;
     padding: {
         top: 2%;
         bottom: 13%;
         left: 2%;
         right: 2%;
     }
-    display: none;
+
+    @include breakpoint(mobile) {
+        text-align: center;
+        padding-right: 0px;
+    }
 
     a {
         color: rgba(255, 255, 255, 1);
@@ -222,6 +271,11 @@
 
         @include breakpoint(tablet) {
             margin-right: -0.6%;
+        }
+
+        @include breakpoint(mobile) {
+            margin-right: 4%;
+            margin-bottom: 30px;
         }
     }
 }
