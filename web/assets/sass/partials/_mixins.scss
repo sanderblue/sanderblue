@@ -8,4 +8,7 @@
     @else if $break == tablet {
         @media (max-width: 992px) { @content; }
     }
+    @else if $break == bootstrap_tablet {
+        @media (min-width: 992px) { @content; }
+    }
 }
