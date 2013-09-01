@@ -25,6 +25,11 @@
 
     @include breakpoint(tablet) {
         float: right;
+        width: 60%;
+    }
+
+    @include breakpoint(tablet_horizontal) {
+        width: 60%;
     }
 }
 
@@ -39,3 +44,22 @@
     font-size: 0.8em;
     line-height: 0em;
 }
+
+.intro {
+    margin: {
+        top: 5%;
+    }
+
+    p {
+        font-size: 0.75em;
+
+        &:last-child {
+            margin-top: 3%;
+        }
+    }
+}
+
+
+
+
+

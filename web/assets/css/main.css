@@ -136,10 +136,17 @@ a:hover {
   /* line 22, ../sass/partials/_content.scss */
   .right-side {
     float: right;
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 22, ../sass/partials/_content.scss */
+  .right-side {
+    width: 60%;
   }
 }
 
-/* line 31, ../sass/partials/_content.scss */
+/* line 36, ../sass/partials/_content.scss */
 .hello {
   text-shadow: 3px 7px 16px rgba(0, 0, 0, 0.9);
   font-family: "Tw Cen MT", sans-serif;
@@ -147,10 +154,23 @@ a:hover {
   line-height: 1.0em;
 }
 
-/* line 38, ../sass/partials/_content.scss */
+/* line 43, ../sass/partials/_content.scss */
 .welcome {
   font-size: 0.8em;
   line-height: 0em;
+}
+
+/* line 48, ../sass/partials/_content.scss */
+.intro {
+  margin-top: 5%;
+}
+/* line 53, ../sass/partials/_content.scss */
+.intro p {
+  font-size: 0.75em;
+}
+/* line 56, ../sass/partials/_content.scss */
+.intro p:last-child {
+  margin-top: 3%;
 }
 
 /* line 1, ../sass/partials/_navigation.scss */
