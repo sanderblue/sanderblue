@@ -1,0 +1,30 @@
+.social-icon {
+    @include text-shadow(0 5px 8px rgba(0, 0, 0, .85));
+    @include opacity(0.6);
+    margin-right: 5.6%;
+    position: relative;
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+
+    &:hover {
+        cursor: pointer;
+        @include opacity(1);
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.twitter, .facebook, .linkedin, .github, .tumblr { @include transition(all 0.25s ease-in-out); }
+
+.tumblr   { background: url('../img/icon-tumblr.png') no-repeat; }
+.twitter  { background: url('../img/icon-twitter.png') no-repeat; }
+.facebook { background: url('../img/icon-facebook.png') no-repeat; }
+.linkedin { background: url('../img/icon-linkedin.png') no-repeat; }
+.github   { background: url('../img/icon-github.png') no-repeat; }

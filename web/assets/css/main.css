@@ -63,11 +63,85 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 1, ../sass/partials/_utilities.scss */
+.bold {
+  font-weight: 600;
+}
+
+/* line 2, ../sass/partials/_utilities.scss */
+.thin {
+  font-weight: 100;
+}
+
+/* line 3, ../sass/partials/_utilities.scss */
+.white {
+  color: #ffffff;
+}
+
 @font-face {
   font-family: "Tw Cen MT";
   src: url('../fonts/TwCenMT.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+/* line 1, ../sass/partials/_icons.scss */
+.social-icon {
+  text-shadow: 0 5px 8px rgba(0, 0, 0, 0.85);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  margin-right: 5.6%;
+  position: relative;
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+/* line 14, ../sass/partials/_icons.scss */
+.social-icon:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 19, ../sass/partials/_icons.scss */
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+/* line 24, ../sass/partials/_icons.scss */
+.twitter, .facebook, .linkedin, .github, .tumblr {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* line 26, ../sass/partials/_icons.scss */
+.tumblr {
+  background: url("../img/icon-tumblr.png") no-repeat;
+}
+
+/* line 27, ../sass/partials/_icons.scss */
+.twitter {
+  background: url("../img/icon-twitter.png") no-repeat;
+}
+
+/* line 28, ../sass/partials/_icons.scss */
+.facebook {
+  background: url("../img/icon-facebook.png") no-repeat;
+}
+
+/* line 29, ../sass/partials/_icons.scss */
+.linkedin {
+  background: url("../img/icon-linkedin.png") no-repeat;
+}
+
+/* line 30, ../sass/partials/_icons.scss */
+.github {
+  background: url("../img/icon-github.png") no-repeat;
 }
 
 /* line 1, ../sass/partials/_global.scss */
@@ -107,11 +181,10 @@ a:hover {
 
 /* line 2, ../sass/partials/_content.scss */
 .container .jumbotron {
-  border: 1px solid white;
-  margin-top: 60px;
-  background-color: rgba(50, 50, 50, 0.15);
+  background-color: rgba(50, 50, 50, 0);
   padding-right: 0px;
   padding-left: 0px;
+  margin-top: 60px;
 }
 
 /* line 11, ../sass/partials/_content.scss */
@@ -126,27 +199,34 @@ a:hover {
     float: left;
   }
 }
+@media (max-width: 480px) {
+  /* line 11, ../sass/partials/_content.scss */
+  .logo {
+    float: none;
+    margin: 0 auto;
+  }
+}
 
-/* line 22, ../sass/partials/_content.scss */
+/* line 27, ../sass/partials/_content.scss */
 .right-side {
   text-align: right;
   float: right;
 }
 @media (max-width: 992px) {
-  /* line 22, ../sass/partials/_content.scss */
+  /* line 27, ../sass/partials/_content.scss */
   .right-side {
     float: right;
     width: 60%;
   }
 }
 @media (max-width: 768px) {
-  /* line 22, ../sass/partials/_content.scss */
+  /* line 27, ../sass/partials/_content.scss */
   .right-side {
     width: 60%;
   }
 }
 
-/* line 36, ../sass/partials/_content.scss */
+/* line 41, ../sass/partials/_content.scss */
 .hello {
   text-shadow: 3px 7px 16px rgba(0, 0, 0, 0.9);
   font-family: "Tw Cen MT", sans-serif;
@@ -154,23 +234,169 @@ a:hover {
   line-height: 1.0em;
 }
 
-/* line 43, ../sass/partials/_content.scss */
+/* line 48, ../sass/partials/_content.scss */
 .welcome {
-  font-size: 0.8em;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
+  font-size: 0.75em;
+  font-weight: 500;
   line-height: 0em;
 }
 
-/* line 48, ../sass/partials/_content.scss */
+/* line 55, ../sass/partials/_content.scss */
 .intro {
-  margin-top: 5%;
+  padding: 10px;
+  letter-spacing: 0.05em;
 }
-/* line 53, ../sass/partials/_content.scss */
+/* line 59, ../sass/partials/_content.scss */
 .intro p {
-  font-size: 0.75em;
+  font-size: 0.73em;
+  font-weight: 400;
 }
-/* line 56, ../sass/partials/_content.scss */
+/* line 63, ../sass/partials/_content.scss */
 .intro p:last-child {
   margin-top: 3%;
+}
+
+/* line 69, ../sass/partials/_content.scss */
+.info-holder {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(75%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(50, 50, 50, 0.01)));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(50, 50, 50, 0.01) 100%);
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(50, 50, 50, 0.01) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(50, 50, 50, 0.01) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 75%, rgba(50, 50, 50, 0.01) 100%);
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
+}
+
+/* line 74, ../sass/partials/_content.scss */
+.info-sublinks {
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 0.75em;
+  font-weight: 400;
+  margin-top: 5%;
+}
+/* line 80, ../sass/partials/_content.scss */
+.info-sublinks .info-link {
+  text-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 4%;
+  margin-left: 1%;
+}
+/* line 89, ../sass/partials/_content.scss */
+.info-sublinks .info-link:last-child {
+  margin-right: 0;
+}
+/* line 93, ../sass/partials/_content.scss */
+.info-sublinks .info-link:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+  opacity: 0.85;
+}
+
+/* line 100, ../sass/partials/_content.scss */
+.project:hover {
+  cursor: pointer;
+}
+
+/* line 105, ../sass/partials/_content.scss */
+.active:before {
+  content: url("/assets/img/icon-circles.png");
+  height: 10px;
+  width: 25px;
+  position: absolute;
+  display: block;
+  height: 8px;
+  width: 8px;
+  margin-left: -4.4%;
+  margin-top: 0.17%;
+}
+
+/* line 119, ../sass/partials/_content.scss */
+.about-header {
+  text-shadow: 3px 7px 16px rgba(0, 0, 0, 0.9);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=93);
+  opacity: 0.93;
+  font-family: "Tw Cen MT", sans-serif;
+  font-size: 6.75em;
+  margin-bottom: -8px;
+}
+
+/* line 129, ../sass/partials/_content.scss */
+.sub-text {
+  text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.85);
+  text-align: right;
+  font-weight: 200;
+  letter-spacing: 0.07em;
+  font-size: 15px;
+  margin-right: 2px;
+  margin-bottom: 50px;
+}
+
+/* line 141, ../sass/partials/_content.scss */
+.about-holder {
+  padding: 2%;
+  font-size: 0.85em;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+/* line 147, ../sass/partials/_content.scss */
+.about-holder p {
+  margin-bottom: 3%;
+}
+
+/* line 154, ../sass/partials/_content.scss */
+.code-holder {
+  /*letter-spacing: 0.1em;*/
+  display: none;
+  padding: 2%;
+}
+
+/* line 160, ../sass/partials/_content.scss */
+.skills-holder {
+  position: relative;
+  display: inline-block;
+  width: 23%;
+  vertical-align: text-top;
+}
+
+/* line 167, ../sass/partials/_content.scss */
+.skill {
+  text-shadow: 0 5px 8px rgba(0, 0, 0, 0.85);
+  font-size: 0.65em;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.85);
+}
+/* line 173, ../sass/partials/_content.scss */
+.skill a {
+  color: rgba(255, 255, 255, 0.85);
+}
+/* line 176, ../sass/partials/_content.scss */
+.skill a:hover {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  color: rgba(255, 255, 255, 0.99);
+}
+
+/* line 183, ../sass/partials/_content.scss */
+.skill-header {
+  line-height: 1em;
+  font-size: 0.8em;
+  margin-bottom: 3.7%;
+}
+
+/* line 191, ../sass/partials/_content.scss */
+.social-icon-holder {
+  padding-top: 2%;
+  padding-bottom: 13%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: none;
+}
+/* line 200, ../sass/partials/_content.scss */
+.social-icon-holder a {
+  color: white;
+  font-weight: 400;
 }
 
 /* line 1, ../sass/partials/_navigation.scss */

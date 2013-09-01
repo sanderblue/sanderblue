@@ -1,10 +1,10 @@
 .container {
     .jumbotron {
-        border: 1px solid white;
-        margin-top: 60px;
-        background-color: rgba(50, 50, 50, .15);
+        // border: 1px solid white;
+        background-color: rgba(50, 50, 50, 0);
         padding-right: 0px;
         padding-left: 0px;
+        margin-top: 60px;
     }
 }
 
@@ -15,6 +15,11 @@
 
     @include breakpoint(tablet) {
         float: left;
+    }
+
+    @include breakpoint(mobile) {
+        float: none;
+        margin: 0 auto;
     }
 }
 
@@ -41,17 +46,19 @@
 }
 
 .welcome {
-    font-size: 0.8em;
+    @include text-shadow(0 3px 8px rgba(0, 0, 0, .75));
+    font-size: 0.75em;
+    font-weight: 500;
     line-height: 0em;
 }
 
 .intro {
-    margin: {
-        top: 5%;
-    }
+    padding: 10px;
+    letter-spacing: 0.05em;
 
     p {
-        font-size: 0.75em;
+        font-size: 0.73em;
+        font-weight: 400;
 
         &:last-child {
             margin-top: 3%;
@@ -59,7 +66,142 @@
     }
 }
 
+.info-holder {
+    @include background(linear-gradient(rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .5) 75%, rgba(50, 50, 50, .01) 100%));
+    @include text-shadow(0 3px 8px rgba(0, 0, 0, .75));
+}
 
+.info-sublinks {
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-top: 5%;
+
+    .info-link {
+        @include text-shadow(0 6px 10px rgba(0, 0, 0, .8));
+        display: inline-block;
+        cursor: pointer;
+        margin: {
+            right: 4%;
+            left: 1%;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            @include opacity(.85);
+        }
+    }
+}
+
+.project {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.active:before {
+    content: url('/assets/img/icon-circles.png');
+    height: 10px;
+    width: 25px;
+    position: absolute;
+    display: block;
+    height: 8px;
+    width: 8px;
+    margin: {
+        left: -4.4%;
+        top: 0.17%;
+    }
+}
+
+.about-header {
+    @include text-shadow(3px 7px 16px rgba(0, 0, 0, .9));
+    @include opacity(.93);
+    font-family: $CenturyMT;
+    font-size: 6.75em;
+    margin: {
+        bottom: -8px;
+    }
+}
+
+.sub-text {
+    @include text-shadow(3px 4px 8px rgba(0, 0, 0, .85));
+    text-align: right;
+    font-weight: 200;
+    letter-spacing: 0.07em;
+    font-size: 15px;
+    margin: {
+        right: 2px;
+        bottom: 50px;
+    }
+}
+
+.about-holder {
+    padding: 2%;
+    font-size: 0.85em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+
+    p {
+        margin: {
+            bottom: 3%;
+        }
+    }
+}
+
+.code-holder {
+    /*letter-spacing: 0.1em;*/
+    display: none;
+    padding: 2%;
+}
+
+.skills-holder {
+    position: relative;
+    display: inline-block;
+    width: 23%;
+    vertical-align: text-top;
+}
+
+.skill {
+    @include text-shadow(0 5px 8px rgba(0, 0, 0, .85));
+    font-size: 0.65em;
+    font-weight: 100;
+    color: rgba(255, 255, 255, .85);
+
+    a {
+        color: rgba(255, 255, 255, .85);
+
+        &:hover {
+            @include transition(all 0.25s ease-in-out);
+            color: rgba(255, 255, 255, .99);
+        }
+    }
+}
+
+.skill-header {
+    line-height: 1em;
+    font-size: 0.8em;
+    margin: {
+        bottom: 3.7%;
+    }
+}
+
+.social-icon-holder {
+    padding: {
+        top: 2%;
+        bottom: 13%;
+        left: 2%;
+        right: 2%;
+    }
+    display: none;
+
+    a {
+        color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+    }
+}
 
 
 
