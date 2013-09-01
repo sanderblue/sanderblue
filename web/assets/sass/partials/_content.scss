@@ -1,7 +1,41 @@
-.container {}
+.container {
+    .jumbotron {
+        border: 1px solid white;
+        margin-top: 60px;
+        background-color: rgba(50, 50, 50, .15);
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
 
-.jumbotron {
-    border: 1px solid white;
-    margin-top: 60px;
-    background-color: rgba(50, 50, 50, .15);
+.logo {
+    background: url("/assets/img/logo-250x304.png") no-repeat;
+    height: 304px;
+    width: 250px;
+
+    @include breakpoint(tablet) {
+        float: left;
+    }
+}
+
+.left-side {}
+.right-side {
+    text-align: right;
+    float: right;
+
+    @include breakpoint(tablet) {
+        float: right;
+    }
+}
+
+.hello {
+    @include text-shadow(3px 7px 16px rgba(0, 0, 0, .9));
+    font-family: $CenturyMT;
+    font-size: 5.75em;
+    line-height: 1.0em;
+}
+
+.welcome {
+    font-size: 0.8em;
+    line-height: 0em;
 }

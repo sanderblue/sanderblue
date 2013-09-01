@@ -105,11 +105,52 @@ a:hover {
   color: rgba(255, 255, 255, 0.99);
 }
 
-/* line 3, ../sass/partials/_content.scss */
-.jumbotron {
+/* line 2, ../sass/partials/_content.scss */
+.container .jumbotron {
   border: 1px solid white;
   margin-top: 60px;
   background-color: rgba(50, 50, 50, 0.15);
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* line 11, ../sass/partials/_content.scss */
+.logo {
+  background: url("/assets/img/logo-250x304.png") no-repeat;
+  height: 304px;
+  width: 250px;
+}
+@media (max-width: 992px) {
+  /* line 11, ../sass/partials/_content.scss */
+  .logo {
+    float: left;
+  }
+}
+
+/* line 22, ../sass/partials/_content.scss */
+.right-side {
+  text-align: right;
+  float: right;
+}
+@media (max-width: 992px) {
+  /* line 22, ../sass/partials/_content.scss */
+  .right-side {
+    float: right;
+  }
+}
+
+/* line 31, ../sass/partials/_content.scss */
+.hello {
+  text-shadow: 3px 7px 16px rgba(0, 0, 0, 0.9);
+  font-family: "Tw Cen MT", sans-serif;
+  font-size: 5.75em;
+  line-height: 1.0em;
+}
+
+/* line 38, ../sass/partials/_content.scss */
+.welcome {
+  font-size: 0.8em;
+  line-height: 0em;
 }
 
 /* line 1, ../sass/partials/_navigation.scss */
