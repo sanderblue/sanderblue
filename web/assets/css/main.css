@@ -90,7 +90,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 0 5px 8px rgba(0, 0, 0, 0.85);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
-  margin-right: 5.6%;
+  margin-right: 8.9%;
   position: relative;
   display: inline-block;
   height: 75px;
@@ -110,8 +110,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .social-icon:last-child {
   margin-right: 0;
 }
+@media (max-width: 1200px) {
+  /* line 1, ../sass/partials/_icons.scss */
+  .social-icon {
+    margin-right: 5.6%;
+  }
+}
 
-/* line 24, ../sass/partials/_icons.scss */
+/* line 28, ../sass/partials/_icons.scss */
 .twitter, .facebook, .linkedin, .github, .tumblr {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -119,27 +125,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition: all 0.25s ease-in-out;
 }
 
-/* line 26, ../sass/partials/_icons.scss */
+/* line 30, ../sass/partials/_icons.scss */
 .tumblr {
   background: url("../img/icon-tumblr.png") no-repeat;
 }
 
-/* line 27, ../sass/partials/_icons.scss */
+/* line 31, ../sass/partials/_icons.scss */
 .twitter {
   background: url("../img/icon-twitter.png") no-repeat;
 }
 
-/* line 28, ../sass/partials/_icons.scss */
+/* line 32, ../sass/partials/_icons.scss */
 .facebook {
   background: url("../img/icon-facebook.png") no-repeat;
 }
 
-/* line 29, ../sass/partials/_icons.scss */
+/* line 33, ../sass/partials/_icons.scss */
 .linkedin {
   background: url("../img/icon-linkedin.png") no-repeat;
 }
 
-/* line 30, ../sass/partials/_icons.scss */
+/* line 34, ../sass/partials/_icons.scss */
 .github {
   background: url("../img/icon-github.png") no-repeat;
 }
@@ -375,25 +381,19 @@ a:hover {
     width: 24%;
   }
 }
-@media (min-width: 992px) {
-  /* line 183, ../sass/partials/_content.scss */
-  .skills-holder:last-child {
-    margin-right: -10px;
-  }
-}
 
-/* line 191, ../sass/partials/_content.scss */
+/* line 185, ../sass/partials/_content.scss */
 .skill {
   text-shadow: 0 5px 8px rgba(0, 0, 0, 0.85);
   font-size: 0.65em;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.85);
 }
-/* line 197, ../sass/partials/_content.scss */
+/* line 191, ../sass/partials/_content.scss */
 .skill a {
   color: rgba(255, 255, 255, 0.85);
 }
-/* line 200, ../sass/partials/_content.scss */
+/* line 194, ../sass/partials/_content.scss */
 .skill a:hover {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -402,7 +402,7 @@ a:hover {
   color: rgba(255, 255, 255, 0.99);
 }
 
-/* line 207, ../sass/partials/_content.scss */
+/* line 201, ../sass/partials/_content.scss */
 .skill-header {
   line-height: 1em;
   font-size: 0.75em;
@@ -410,7 +410,7 @@ a:hover {
   margin-bottom: 3.7%;
 }
 
-/* line 216, ../sass/partials/_content.scss */
+/* line 210, ../sass/partials/_content.scss */
 .social-icon-holder {
   padding-top: 2%;
   padding-bottom: 13%;
@@ -418,13 +418,13 @@ a:hover {
   padding-right: 2%;
   display: none;
 }
-/* line 225, ../sass/partials/_content.scss */
+/* line 219, ../sass/partials/_content.scss */
 .social-icon-holder a {
   color: white;
   font-weight: 400;
 }
 @media (max-width: 992px) {
-  /* line 225, ../sass/partials/_content.scss */
+  /* line 219, ../sass/partials/_content.scss */
   .social-icon-holder a {
     margin-right: -0.6%;
   }

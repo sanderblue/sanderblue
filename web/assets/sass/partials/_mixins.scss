@@ -11,4 +11,7 @@
     @else if $break == bootstrap_tablet {
         @media (min-width: 992px) { @content; }
     }
+    @else if $break == tablet_large {
+        @media (max-width: 1200px) { @content; }
+    }
 }

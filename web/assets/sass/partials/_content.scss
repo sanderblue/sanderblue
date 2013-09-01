@@ -180,13 +180,6 @@
     @include breakpoint(tablet) {
         width: 24%;
     }
-
-    &:last-child {
-        @include breakpoint(bootstrap_tablet) {
-            margin-right: -10px;
-        }
-    }
-
 }
 
 .skill {
