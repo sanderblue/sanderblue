@@ -75,7 +75,7 @@ $(document).ready(function() {
         });
 
         $('.close-popover').on('click', function () {
-            $('.pop-api').popover('toggle   ');
+            $('.pop-api').popover('toggle');
         });
 
         $('.pop-gitgraph, .pop-polymath').popover('hide');

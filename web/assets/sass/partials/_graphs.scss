@@ -32,6 +32,11 @@ $icon_github: "../img/icon-github-very-small.png";
 #chartgitgraph, #chartpolymath, #chartapi {
     height: 160px;
     width: 360px;
+
+    @include breakpoint(mobile_vertical) {
+        height: 120px;
+        width: 300px;
+    }
 }
 
 .recent {

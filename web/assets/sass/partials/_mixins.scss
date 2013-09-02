@@ -2,6 +2,9 @@
     @if $break == mobile {
         @media (max-width: 480px) { @content; }
     }
+    @if $break == mobile_vertical {
+        @media (max-width: 320px) { @content; }
+    }
     @else if $break == tablet_horizontal {
         @media (max-width: 768px)  { @content; }
     }
