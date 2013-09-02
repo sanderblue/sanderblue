@@ -275,7 +275,7 @@ a:hover {
 .hello {
   text-shadow: 3px 7px 16px rgba(0, 0, 0, 0.9);
   font-family: "Tw Cen MT", sans-serif;
-  font-size: 5.75em;
+  font-size: 5.25em;
   line-height: 1.0em;
 }
 @media (max-width: 480px) {

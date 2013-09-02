@@ -1,25 +1,9 @@
 $(document).ready(function() {
 
-
-    // if ($(window).width() < 768) {
-    //     $('.pop-gitgraph').popover({
-    //         html: true,
-    //         placement: 'bottom',
-    //         content: $('#project-gitgraph').html()
-    //     });
-    // } else {
-    //     $('.pop-gitgraph').popover({
-    //         html: true,
-    //         content: $('#project-gitgraph').html()
-    //     });
-    // }
-
     $('.pop-gitgraph').popover({
         html: true,
         content: $('#project-gitgraph').html(),
-        placement: function (data) {
-            console.log('placement data', data)
-
+        placement: function (popover_element) {
             if ($(window).width() < 768) {
                 return 'bottom';
             } else {
@@ -31,9 +15,7 @@ $(document).ready(function() {
     $('.pop-polymath').popover({
         html: true,
         content: $('#project-polymath').html(),
-        placement: function (data) {
-            console.log('placement data', data)
-
+        placement: function (popover_element) {
             if ($(window).width() < 768) {
                 return 'bottom';
             } else {
@@ -45,9 +27,7 @@ $(document).ready(function() {
     $('.pop-api').popover({
         html: true,
         content: $('#project-api').html(),
-        placement: function (data) {
-            console.log('placement data', data)
-
+        placement: function (popover_element) {
             if ($(window).width() < 768) {
                 return 'bottom';
             } else {
@@ -95,7 +75,7 @@ $(document).ready(function() {
         });
 
         $('.close-popover').on('click', function () {
-            $('.pop-api').popover('toggle');
+            $('.pop-api').popover('toggle   ');
         });
 
         $('.pop-gitgraph, .pop-polymath').popover('hide');
