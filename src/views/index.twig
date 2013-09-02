@@ -22,15 +22,58 @@
                     <div class="skills-holder languages">
                         <div class="skill-header">Projects</div>
                         <div class="skill project">
-                            <a class="pop-gitgraph" rel="popover">GitGraph</a>
+                            <a class="pop-gitgraph">GitGraph</a>
+
+                            <div id="project-gitgraph" class="popover">
+                                <div class="project-title gitgraph-title">GitGraph.js</div>
+                                <a href="https://github.com/sanderblue/gitGraph" target="_blank" class="github-page gitgraph-github"></a>
+                                <span class="close-popover" rel="popover">&#215;</span>
+                                <div class="project-description">
+                                    This is a jQuery plugin I built using Morris.js, Moment.js,
+                                    and GitHub's developer API. It displays a GitHub repository's
+                                    previous seven days of commit activity. It powers each of these
+                                    graphs in this section. It is currently in development with future
+                                    releases planned.
+                                </div>
+                                <div id="chartgitgraph">
+                                </div>
+                                <div class="recent">Recent GitHub Activity</div>
+                            </div>
                         </div>
                         <div class="skill project">
-                            <a class="pop-polymath" rel="popover">Polymath</a>
+                            <a class="pop-polymath">Polymath</a>
+
+                            <div id="project-polymath" class="popover">
+                                <div class="project-title polymath-title">Polymath</div>
+                                <a href="https://github.com/sanderblue/polymath" target="_blank" class="github-page polymath-github"></a>
+                                <span class="close-popover" rel="popover">&#215;</span>
+                                <div class="project-description">
+                                    Polymath is a multi-purpose PHP 5.3 Mathematics Library. Contains conversions,
+                                    random number generators, and other interesting calculations.
+                                </div>
+                                <div id="chartpolymath">
+                                </div>
+                                <div class="recent">Recent GitHub Activity</div>
+                            </div>
                         </div>
                         <div class="skill project">
-                            <a class="pop-api" rel="popover">REST API</a>
+                            <a class="pop-api">REST API</a>
+
+                            <div id="project-api" class="popover">
+                                <div class="project-title api-title">REST API</div>
+                                <a href="https://github.com/sanderblue/javascript-rest-api" target="_blank" class="github-page api-github"></a>
+                                <span class="close-popover" rel="popover">&#215;</span>
+                                <div class="project-description">
+                                    A REST API written in JavaScript using the Express.js framework for Node.
+                                </div>
+                                <div id="chartapi">
+                                </div>
+                                <div class="recent">Recent GitHub Activity</div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- <div class="project-title api-title">REST API</div><a href="https://github.com/sanderblue/javascript-rest-api" target="_blank" class="github-page api-github"></a><span class="close-popover" rel="popover">&#215;</span><div class="project-description">' + "A REST API written in JavaScript using the Express.js framework for Node." + '</div><div id="chartapi" /><div class="recent">' + "Recent GitHub Activity" + '</div>'; -->
                     <div class="skills-holder languages">
                         <div class="skill-header">Code</div>
                         <div class="skill">HTML5</div>
@@ -86,4 +129,6 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="assets/js/graphs.js"></script>
 {% endblock %}
