@@ -1,18 +1,59 @@
 $(document).ready(function() {
 
+
+    // if ($(window).width() < 768) {
+    //     $('.pop-gitgraph').popover({
+    //         html: true,
+    //         placement: 'bottom',
+    //         content: $('#project-gitgraph').html()
+    //     });
+    // } else {
+    //     $('.pop-gitgraph').popover({
+    //         html: true,
+    //         content: $('#project-gitgraph').html()
+    //     });
+    // }
+
     $('.pop-gitgraph').popover({
-      html: true,
-      content: $('#project-gitgraph').html()
+        html: true,
+        content: $('#project-gitgraph').html(),
+        placement: function (data) {
+            console.log('placement data', data)
+
+            if ($(window).width() < 768) {
+                return 'bottom';
+            } else {
+                return 'right';
+            }
+        }
     });
 
     $('.pop-polymath').popover({
-      html: true,
-      content: $('#project-polymath').html()
+        html: true,
+        content: $('#project-polymath').html(),
+        placement: function (data) {
+            console.log('placement data', data)
+
+            if ($(window).width() < 768) {
+                return 'bottom';
+            } else {
+                return 'right';
+            }
+        }
     });
 
     $('.pop-api').popover({
-      html: true,
-      content: $('#project-api').html()
+        html: true,
+        content: $('#project-api').html(),
+        placement: function (data) {
+            console.log('placement data', data)
+
+            if ($(window).width() < 768) {
+                return 'bottom';
+            } else {
+                return 'right';
+            }
+        }
     });
 
     $('.pop-gitgraph').on('click', function () {
@@ -24,7 +65,7 @@ $(document).ready(function() {
         });
 
         $('.close-popover').on('click', function () {
-            $('.pop-gitgraph').popover('hide');
+            $('.pop-gitgraph').popover('toggle');
         });
 
         $('.pop-polymath, .pop-api').popover('hide');
@@ -39,7 +80,7 @@ $(document).ready(function() {
         });
 
         $('.close-popover').on('click', function () {
-            $('.pop-polymath').popover('hide');
+            $('.pop-polymath').popover('toggle');
         });
 
         $('.pop-gitgraph, .pop-api').popover('hide');
@@ -54,7 +95,7 @@ $(document).ready(function() {
         });
 
         $('.close-popover').on('click', function () {
-            $('.pop-api').popover('hide');
+            $('.pop-api').popover('toggle');
         });
 
         $('.pop-gitgraph, .pop-polymath').popover('hide');

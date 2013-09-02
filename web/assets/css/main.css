@@ -637,24 +637,40 @@ a:hover {
   position: absolute;
   max-width: none;
 }
+@media (max-width: 992px) {
+  /* line 12, ../sass/partials/_popover.scss */
+  .popover.right {
+    margin-left: -215%;
+  }
+  /* line 16, ../sass/partials/_popover.scss */
+  .popover .arrow {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 1, ../sass/partials/_popover.scss */
+  .popover {
+    left: -31px !important;
+  }
+}
 
-/* line 12, ../sass/partials/_popover.scss */
+/* line 24, ../sass/partials/_popover.scss */
 .parent {
   font-size: 1.3em;
 }
 
-/* line 16, ../sass/partials/_popover.scss */
+/* line 28, ../sass/partials/_popover.scss */
 .child {
   margin-left: 6%;
 }
 
-/* line 22, ../sass/partials/_popover.scss */
+/* line 34, ../sass/partials/_popover.scss */
 .grandchild {
   font-size: 0.7em;
   margin-left: 6%;
 }
 
-/* line 29, ../sass/partials/_popover.scss */
+/* line 41, ../sass/partials/_popover.scss */
 .close-popover {
   float: right;
   font-size: 16px;
