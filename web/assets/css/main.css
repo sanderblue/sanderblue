@@ -734,13 +734,13 @@ a:hover {
 }
 
 /* line 32, ../sass/partials/_graphs.scss */
-#chartgitgraph, #chartpolymath, #chartapi {
+#chartgitgraph, #chartpolymath, #chartapi, #chartangularexpress {
   height: 160px;
   width: 360px;
 }
 @media (max-width: 320px) {
   /* line 32, ../sass/partials/_graphs.scss */
-  #chartgitgraph, #chartpolymath, #chartapi {
+  #chartgitgraph, #chartpolymath, #chartapi, #chartangularexpress {
     height: 120px;
     width: 300px;
   }
